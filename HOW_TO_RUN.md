@@ -17,13 +17,11 @@ This comprehensive guide will walk you through the process of setting up and run
 
 ```bash
 # Clone the repository
-git clone https://github.com/gpt-engineer-org/espada.git
-
-# Navigate to the project directory
-cd espada
+git clone https://github.com/VinsmokeSomya/Vibe-Coder.git
+cd Vibe-Coder
 
 # Verify you're in the correct directory
-pwd  # Should show the path to espada directory
+pwd  # Should show the path to Vibe-Coder directory
 ```
 
 ## Step 2: Install Poetry

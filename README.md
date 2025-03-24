@@ -54,8 +54,8 @@ A powerful and flexible AI code generation tool that helps developers create, mo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/gpt-engineer-org/espada.git
-cd espada
+git clone https://github.com/VinsmokeSomya/Vibe-Coder.git
+cd Vibe-Coder
 ```
 
 2. Install dependencies using Poetry:
@@ -193,10 +193,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📫 Contact & Support
 
-- GitHub Issues: [Report a bug](https://github.com/gpt-engineer-org/espada/issues)
-- Documentation: [Read the docs](https://espada.readthedocs.io/)
-- Discord: [Join our community](https://discord.gg/espada)
-- Twitter: [@EspadaAI](https://twitter.com/EspadaAI)
+- GitHub Issues: [Report a bug](https://github.com/VinsmokeSomya/Vibe-Coder/issues)
+- Documentation: [Coming soon...]()
+
 
 ## 🚀 Future Plans
 
