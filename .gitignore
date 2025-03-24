@@ -1,0 +1,113 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.history/
+
+# Distribution / packaging
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.env.sh
+venv/
+ENV/
+env/
+venv_test_installation/
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compiled Python modules
+*.pyc
+*.pyo
+*.pyd
+
+# Python testing
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+
+# this application's specific files
+archive
+
+# any log file
+*log.txt
+todo
+scratchpad
+
+# Pyenv
+.python-version
+
+.espada_consent
+
+# projects folder apart from default prompt
+
+projects/*
+!projects/example
+.cache/
+
+# docs
+
+docs/_build
+docs/applications
+docs/benchmark
+docs/cli
+docs/core
+docs/intro
+docs/tools
+
+# coding assistants
+.aider*
+.espada
+
+# webapp specific
+webapp/node_modules
+webapp/package-lock.json
+
+webapp/.next/
+
+.langchain.db
+
+# TODO files
+/!todo*
+
+#ignore tox files
+.tox
+
+# locally saved datasets
+espada/benchmark/benchmarks/apps/dataset
+espada/benchmark/benchmarks/mbpp/dataset
+espada/benchmark/benchmarks/espadar1/dataset
+espada/benchmark/minimal_bench_config.toml
+
+test.json
