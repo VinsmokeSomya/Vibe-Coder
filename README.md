@@ -103,19 +103,22 @@ poetry run espada projects/your-project --model claude-2
 ```
 espada/
 ├── applications/        # Application-specific code
-│   ├── cli/           # CLI implementation
-│   └── api/           # API endpoints
+│   └── cli/           # CLI implementation
 ├── core/              # Core functionality
-│   ├── models/        # AI model integrations
-│   ├── generators/    # Code generation logic
-│   └── utils/         # Utility functions
-├── memory/            # Memory management
-│   ├── cache/         # Caching system
-│   └── history/       # Historical data
-├── execution/         # Code execution environment
-│   ├── runners/       # Code runners
-│   └── sandbox/       # Isolated execution
-└── templates/         # Project templates
+│   ├── ai.py         # AI model integrations and interactions
+│   ├── base_agent.py # Base agent implementation
+│   ├── chat_to_files.py # Chat to file conversion logic
+│   ├── diff.py       # Code diffing functionality
+│   ├── git.py        # Git integration
+│   ├── linting.py    # Code linting utilities
+│   ├── prompt.py     # Prompt management
+│   ├── project_config.py # Project configuration
+│   └── token_usage.py # Token usage tracking
+├── tools/            # Tool implementations
+│   ├── custom_steps.py # Custom execution steps
+│   └── supported_languages.py # Language support definitions
+├── preprompts/       # Predefined prompts
+└── benchmark/        # Benchmarking tools
 ```
 
 ## 🔧 Configuration
