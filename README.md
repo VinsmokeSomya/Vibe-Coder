@@ -10,7 +10,7 @@ A powerful and flexible AI code generation tool that helps developers create, mo
   - Customizable output formatting
   
 - **Multiple Model Support**: 
-  - Works with various AI models including GPT-4, Claude, and vision models
+  - Works with various AI models including GPT-4, Claude
   - Flexible model switching for different tasks
   - Optimized prompts for each model type
   
@@ -28,22 +28,12 @@ A powerful and flexible AI code generation tool that helps developers create, mo
   - Efficient project organization and metadata management
   - Version control integration
   - Project templates and scaffolding
-  
-- **Vision Integration**: 
-  - Support for image-based code generation and analysis
-  - UI/UX design interpretation
-  - Diagram-to-code conversion
-  
-- **Extensible Architecture**: 
-  - Modular design for easy extension and customization
-  - Plugin system for additional functionality
-  - Custom prompt templates
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- Python 3.10 or higher (3.11 recommended)
+- Python 3.11 or higher (3.12 recommended)
 - Poetry for dependency management
 - OpenAI API key or Anthropic API key
 - Git version 2.25 or higher
@@ -62,10 +52,14 @@ cd Vibe-Coder
 ```bash
 # Install Poetry if not already installed
 curl -sSL https://install.python-poetry.org | python3 -
+```
 
+```bash
 # Install project dependencies
 poetry install
+```
 
+```bash
 # Verify installation
 poetry run python -c "import espada; print(espada.__version__)"
 ```
@@ -74,7 +68,9 @@ poetry run python -c "import espada; print(espada.__version__)"
 ```bash
 # Create environment file
 cp .env.template .env
+```
 
+```bash
 # Edit .env with your configuration
 OPENAI_API_KEY=your_api_key_here
 ANTHROPIC_API_KEY=your_anthropic_key_here  # Optional
@@ -88,28 +84,18 @@ LOG_LEVEL=INFO
 1. Create a new project:
 ```bash
 # Basic project creation
-poetry run espada new projects/your-project
-
-# With specific template
-poetry run espada new projects/your-project --template web-app
+poetry run espada projects/your-project
 ```
 
 2. Run with specific model:
 ```bash
 # Using GPT-4
-poetry run espada run projects/your-project --model gpt-4
-
-# Using Claude
-poetry run espada run projects/your-project --model claude-2
+poetry run espada projects/your-project --model gpt-4
 ```
 
-3. Use vision capabilities:
 ```bash
-# Process images and generate code
-poetry run espada vision projects/your-project \
-    --model gpt-4-vision-preview \
-    --image-dir designs/ \
-    --output src/
+# Using Claude
+poetry run espada projects/your-project --model claude-2
 ```
 
 ## 📁 Project Structure
@@ -142,25 +128,7 @@ The project can be configured through:
 - `DEBUG_MODE`: Enable debug logging
 - `LOG_LEVEL`: Logging verbosity
 
-### Project Config (espada.yaml)
-```yaml
-project:
-  name: my-project
-  version: 1.0.0
-  description: Project description
 
-models:
-  default: gpt-4
-  fallback: gpt-3.5-turbo
-
-generation:
-  temperature: 0.7
-  max_tokens: 4000
-  
-templates:
-  path: ./templates
-  default: basic
-```
 
 ### Command Line Arguments
 - `--model`: Override model selection
