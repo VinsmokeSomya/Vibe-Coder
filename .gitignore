@@ -98,6 +98,9 @@ webapp/.next/
 
 .langchain.db
 
+# LinkedIn post
+linkedin_post.md
+
 # TODO files
 /!todo*
 

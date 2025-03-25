@@ -105,6 +105,9 @@ You can run the project in multiple ways:
 ### Method 1: Create New Code
 ```bash
 # Basic usage
+poetry run espada projects/my-project 
+
+# With custom model
 poetry run espada projects/my-project --model gpt-4
 
 # With custom temperature (0.0 to 1.0)
