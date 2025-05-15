@@ -1,0 +1,33 @@
+services:
+  espada:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    stdin_open: true
+    tty: true
+    # Set the API key from the .env file
+    env_file:
+      - .env
+    ##  OR set the API key directly
+    # environment:
+      # - OPENAI_API_KEY=YOUR_API_KEY
+    image: espada
+    volumes:
+      - ./projects:/project
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: ["/project"]
+
+
+"""
+version: '3.8'
+
+services:
+  espada:
+    build: .
+    volumes:
+      - ./projects:/app/projects
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: projects/example
+"""
